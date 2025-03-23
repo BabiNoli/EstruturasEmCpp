@@ -23,10 +23,10 @@ class MeuVector {
         int get(int indice) const;        // obtém valor
         void set(int indice, int valor);  // define valor
 
-        int size() const;                 // retorna capacidade
+        int tamanho() const;                 // retorna capacidade
 
         // (Opcional) imprime todos os valores
-        void print() const;
+        void imprimir() const;
 
 };
 

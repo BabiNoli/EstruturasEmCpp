@@ -79,5 +79,40 @@ void ListaSimples::inserirNoMeio(int pos, int valor) {
     atual->next = novoNo;
 }
 
+bool ListaSimples::remover(int valor) {
+    // Se a lista estiver vazia, não há nada para remover
+    if(head == nullptr) {
+        return false;
+    }
+
+    // Se o valor está no primeiro nó (head)
+    if(head->data == valor) {
+        NodeSimples* temp = head;
+        head = head->next;
+        delete temp;
+        return true;
+    }
+
+    // Senão, percorremos para achar o nó cujo "próximo" contenha o valor
+    NodeSimples* atual = head;
+    while(atual->next != nullptr && atual->next->data != valor) {
+        atual = atual->next;
+    }
+
+    // Se chegamos ao fim (atual->next == nullptr), não achamos o valor
+    if(atual->next == nullptr) {
+        return false;
+    }
+
+    // Caso contrário, atual->next é o nó a remover
+    NodeSimples* removido = atual->next;
+    atual->next = removido->next;
+    delete removido;
+    return true;
+
+}
+
+
+
 
 

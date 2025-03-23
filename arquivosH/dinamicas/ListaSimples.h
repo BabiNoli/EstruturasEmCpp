@@ -19,7 +19,7 @@ class ListaSimples {
         void inserirInicio(int val);
         void inserirFim(int val);
 
-
+        bool remover(int valor);
         void imprimir() const;
         bool buscar(int valor) const;
         void inserirNoMeio(int pos, int valor); // Ex: inserir após 'pos' passos, ou "posição"

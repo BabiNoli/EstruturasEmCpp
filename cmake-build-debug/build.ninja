@@ -55,6 +55,24 @@ build CMakeFiles/EstruturasEmCpp.dir/main.cpp.obj: CXX_COMPILER__EstruturasEmCpp
   OBJECT_DIR = CMakeFiles\EstruturasEmCpp.dir
   OBJECT_FILE_DIR = CMakeFiles\EstruturasEmCpp.dir
 
+build CMakeFiles/EstruturasEmCpp.dir/main2.cpp.obj: CXX_COMPILER__EstruturasEmCpp_unscanned_Debug D$:/Repositorio_Github/EstruturasEmCpp/main2.cpp || cmake_object_order_depends_target_EstruturasEmCpp
+  DEP_FILE = CMakeFiles\EstruturasEmCpp.dir\main2.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\EstruturasEmCpp.dir
+  OBJECT_FILE_DIR = CMakeFiles\EstruturasEmCpp.dir
+
+build CMakeFiles/EstruturasEmCpp.dir/arquivosCpp/fixas/MeuVector.cpp.obj: CXX_COMPILER__EstruturasEmCpp_unscanned_Debug D$:/Repositorio_Github/EstruturasEmCpp/arquivosCpp/fixas/MeuVector.cpp || cmake_object_order_depends_target_EstruturasEmCpp
+  DEP_FILE = CMakeFiles\EstruturasEmCpp.dir\arquivosCpp\fixas\MeuVector.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\EstruturasEmCpp.dir
+  OBJECT_FILE_DIR = CMakeFiles\EstruturasEmCpp.dir\arquivosCpp\fixas
+
+build CMakeFiles/EstruturasEmCpp.dir/arquivosCpp/fixas/MinhaMatriz.cpp.obj: CXX_COMPILER__EstruturasEmCpp_unscanned_Debug D$:/Repositorio_Github/EstruturasEmCpp/arquivosCpp/fixas/MinhaMatriz.cpp || cmake_object_order_depends_target_EstruturasEmCpp
+  DEP_FILE = CMakeFiles\EstruturasEmCpp.dir\arquivosCpp\fixas\MinhaMatriz.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\EstruturasEmCpp.dir
+  OBJECT_FILE_DIR = CMakeFiles\EstruturasEmCpp.dir\arquivosCpp\fixas
+
 build CMakeFiles/EstruturasEmCpp.dir/arquivosCpp/dinamicas/ListaSimples.cpp.obj: CXX_COMPILER__EstruturasEmCpp_unscanned_Debug D$:/Repositorio_Github/EstruturasEmCpp/arquivosCpp/dinamicas/ListaSimples.cpp || cmake_object_order_depends_target_EstruturasEmCpp
   DEP_FILE = CMakeFiles\EstruturasEmCpp.dir\arquivosCpp\dinamicas\ListaSimples.cpp.obj.d
   FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
@@ -99,7 +117,7 @@ build CMakeFiles/EstruturasEmCpp.dir/arquivosCpp/dinamicas/Fila.cpp.obj: CXX_COM
 #############################################
 # Link the executable EstruturasEmCpp.exe
 
-build EstruturasEmCpp.exe: CXX_EXECUTABLE_LINKER__EstruturasEmCpp_Debug CMakeFiles/EstruturasEmCpp.dir/main.cpp.obj CMakeFiles/EstruturasEmCpp.dir/arquivosCpp/dinamicas/ListaSimples.cpp.obj CMakeFiles/EstruturasEmCpp.dir/arquivosCpp/dinamicas/ListaDupla.cpp.obj CMakeFiles/EstruturasEmCpp.dir/arquivosCpp/dinamicas/ListaCircularSimples.cpp.obj CMakeFiles/EstruturasEmCpp.dir/arquivosCpp/dinamicas/ListaCircularDupla.cpp.obj CMakeFiles/EstruturasEmCpp.dir/arquivosCpp/dinamicas/Pilha.cpp.obj CMakeFiles/EstruturasEmCpp.dir/arquivosCpp/dinamicas/Fila.cpp.obj
+build EstruturasEmCpp.exe: CXX_EXECUTABLE_LINKER__EstruturasEmCpp_Debug CMakeFiles/EstruturasEmCpp.dir/main.cpp.obj CMakeFiles/EstruturasEmCpp.dir/main2.cpp.obj CMakeFiles/EstruturasEmCpp.dir/arquivosCpp/fixas/MeuVector.cpp.obj CMakeFiles/EstruturasEmCpp.dir/arquivosCpp/fixas/MinhaMatriz.cpp.obj CMakeFiles/EstruturasEmCpp.dir/arquivosCpp/dinamicas/ListaSimples.cpp.obj CMakeFiles/EstruturasEmCpp.dir/arquivosCpp/dinamicas/ListaDupla.cpp.obj CMakeFiles/EstruturasEmCpp.dir/arquivosCpp/dinamicas/ListaCircularSimples.cpp.obj CMakeFiles/EstruturasEmCpp.dir/arquivosCpp/dinamicas/ListaCircularDupla.cpp.obj CMakeFiles/EstruturasEmCpp.dir/arquivosCpp/dinamicas/Pilha.cpp.obj CMakeFiles/EstruturasEmCpp.dir/arquivosCpp/dinamicas/Fila.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\EstruturasEmCpp.dir

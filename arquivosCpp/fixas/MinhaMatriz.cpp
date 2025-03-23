@@ -1,39 +1,51 @@
-//
-// Created by barba on 23.03.2025.
-//
-
-#include "../../arquivosH/fixas/MinhaMatriz.h"
 #include <iostream>
-using namespace std;
+#include "../../arquivosH/fixas/MinhaMatriz.h"
 
-int main() {
-    int n, m, i, j;
-    cout << "Digite o tamanho da matriz[][]: ";
-    cin >> n >> m;
-    int matriz[n][m];
-    cout << "Digite os elementos: ";
-    for (i = 0; i < n; i++) {
-        for (j = 0; j < m; j++) {
-            cin >> matriz[i][j];
+MinhaMatriz::MinhaMatriz(int lin, int col) {
+    linhas = lin;
+    colunas = col;
+    // Aloca as linhas
+    dados = new int*[linhas];
+    // Para cada linha, alocar colunas
+    for(int i = 0; i < linhas; i++) {
+        dados[i] = new int[colunas];
+        // inicializa com 0
+        for(int j = 0; j < colunas; j++) {
+            dados[i][j] = 0;
         }
     }
+}
 
-    cout << endl;
-    for (i= 0; i < n; i++) {
-        for (j = 0; j < n; j++) {
-            cout << matriz[i][j] << " ";
-        }
-        cout << endl;
+MinhaMatriz::~MinhaMatriz() {
+    // liberar cada linha
+    for(int i = 0; i < linhas; i++) {
+        delete[] dados[i];
     }
+    // liberar o ponteiro de ponteiros
+    delete[] dados;
+}
 
-    cout << endl;
-    cout << "Pares: ";
-    for (i= 0; i < n; i++) {
-        for (j = 0; j < n; j++) {
-            if (matriz[i][j] % 2 == 0) {
-                cout << matriz[i][j] << " ";
-            }
+int MinhaMatriz::get(int i, int j) const {
+    return dados[i][j];
+}
+
+void MinhaMatriz::set(int i, int j, int valor) {
+    dados[i][j] = valor;
+}
+
+void MinhaMatriz::imprimir() const {
+    for(int i = 0; i < linhas; i++) {
+        for(int j = 0; j < colunas; j++) {
+            std::cout << dados[i][j] << " ";
         }
+        std::cout << std::endl;
     }
-    return 0;
+}
+
+int MinhaMatriz::getLinhas() const {
+    return linhas;
+}
+
+int MinhaMatriz::getColunas() const {
+    return colunas;
 }

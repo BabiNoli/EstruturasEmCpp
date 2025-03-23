@@ -21,7 +21,7 @@ public:
     // Métodos
     int get(int i, int j) const;
     void set(int i, int j, int valor);
-    void print() const;
+    void imprimir() const;
 
     int getLinhas() const;
     int getColunas() const;

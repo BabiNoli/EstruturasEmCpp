@@ -1,34 +1,40 @@
-//
-// Created by barba on 23.03.2025.
-//
-
 #include "../../arquivosH/fixas/MeuVector.h"
 #include <iostream>
 
 using namespace std;
 
-int main() {
-    int n, i, j;
-    cout << "Digite o tamanho do vetor: ";
-    cin >> n;
-    int vetor[n];
-    cout << "Digite os elementos: ";
-    for (i = 0; i < n; i++) {
-        cin >> vetor[i];
-    }
 
-    cout << endl;
-    for (j = 0; j < n; j++) {
-        cout << vetor[j] << " ";
+MeuVector::MeuVector(int tamanho) {
+    capacidade = tamanho;
+    // aloca array de int
+    dados = new int[capacidade];
+    // inicializa com zero
+    for (int i = 0; i < capacidade; i++) {
+        dados[i] = 0;
     }
-    cout << endl;
-    cout << "Pares: ";
-    for (j = 0; j < n; j++) {
-        if (vetor[j] % 2 == 0) {
-            cout << vetor[j] << " ";
-        }
-    }
-
-    return 0;
 }
 
+MeuVector::~MeuVector() {
+    // libera a memória alocada dinamicamente
+    delete[] dados;
+}
+
+int MeuVector::get(int indice) const {
+    // em código real, pode ser útil validar indice
+    return dados[indice];
+}
+
+void MeuVector::set(int indice, int valor) {
+    dados[indice] = valor;
+}
+
+int MeuVector::tamanho() const {
+    return capacidade;
+}
+
+void MeuVector::imprimir() const {
+    for (int i = 0; i < capacidade; i++) {
+        std::cout << dados[i] << " ";
+    }
+    std::cout << std::endl;
+}
