@@ -5,24 +5,19 @@
 #ifndef NODUPLO_H
 #define NODUPLO_H
 
+// "NodeSimples" como struct "top-level"
+struct NodeDuplo {
+    int data;
+    NodeDuplo* prev;
+    NodeDuplo* next;
 
-class noDuplo {
-    public:
-        noDuplo();
 
-    private:
-        struct NodeDuplo {
-            int data;
-            NodeDuplo* next;
-            NodeDuplo* prev;
-
-            NodeDuplo(int val){
-                data = val;
-                next = nullptr;
-                prev = nullptr;
-            }
-        };
+    // construtor básico
+    NodeDuplo(int val) {
+        data = val;
+        next = nullptr;
+        prev = nullptr;
+    }
 };
 
-
-#endif //NODUPLO_H
+#endif // NOSDUPLO_H
