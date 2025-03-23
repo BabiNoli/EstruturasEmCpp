@@ -1,0 +1,3 @@
+D:/Repositorio_Github/EstruturasEmCpp/cmake-build-debug/CMakeFiles/EstruturasEmCpp.dir
+D:/Repositorio_Github/EstruturasEmCpp/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/Repositorio_Github/EstruturasEmCpp/cmake-build-debug/CMakeFiles/rebuild_cache.dir
