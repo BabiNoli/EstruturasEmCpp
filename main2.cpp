@@ -9,6 +9,8 @@
 #include "arquivosH/dinamicas/ListaCircularDupla.h"
 #include "arquivosH/dinamicas/Pilha.h"
 #include "arquivosH/dinamicas/Fila.h"
+#include "arquivosH/dinamicas/ArvoreBinaria.h"
+#include "arquivosH/dinamicas/ArvoreMultipla.h"
 
 
 int main2() {
@@ -159,6 +161,33 @@ int main2() {
         std::cout << "Dequeue: " << fila.dequeue() << "\n";     // remove 1000
         std::cout << "Dequeue: " << fila.dequeue() << "\n";     // remove 2000
         std::cout << (fila.vazia() ? "Fila vazia\n" : "Fila nao vazia\n");
+    }
+
+    // 9) Arvore Binaria (ArvoreBinaria)
+    {
+        std::cout << "\n[ARVORE BINARIA]\n";
+        ArvoreBinaria ab;
+        ab.inserir(15);
+        ab.inserir(10);
+        ab.inserir(20);
+        ab.inserir(8);
+        std::cout << "Pre-ordem: ";
+        ab.imprimirPreOrdem();           // 15 10 8 20
+        std::cout << (ab.buscar(10) ? "Achou 10\n" : "Nao achou 10\n");
+    }
+
+    // 10) Arvore Multipla (ArvoreMultipla)
+    {
+        std::cout << "\n[ARVORE MULTIPLA]\n";
+        ArvoreMultipla am;
+        am.inserirRaiz(1);
+        NodeArvoreMultipla* r = am.buscar(1);
+        am.inserirFilho(r, 2);
+        am.inserirFilho(r, 3);
+        NodeArvoreMultipla* f2 = am.buscar(2);
+        am.inserirFilho(f2, 4);
+        std::cout << "Pre-ordem: ";
+        am.imprimirPreOrdem();           // 1 2 4 3
     }
 
     std::cout << "\n===== FIM DOS TESTES =====" << std::endl;
