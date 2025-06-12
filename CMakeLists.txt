@@ -1,10 +1,4 @@
-cmake_minimum_required(VERSION 3.30)
-project(EstruturasEmCpp)
-
-set(CMAKE_CXX_STANDARD 20)
-
-
-cmake_minimum_required(VERSION 3.30)
+cmake_minimum_required(VERSION 3.16)
 project(EstruturasEmCpp)
 
 set(CMAKE_CXX_STANDARD 20)
@@ -25,6 +19,3 @@ add_executable(EstruturasEmCpp
         arquivosCpp/dinamicas/Pilha.cpp
         arquivosCpp/dinamicas/Fila.cpp
 )
-
-
-
