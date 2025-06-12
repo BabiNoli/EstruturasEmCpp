@@ -18,4 +18,6 @@ add_executable(EstruturasEmCpp
         arquivosCpp/dinamicas/ListaCircularDupla.cpp
         arquivosCpp/dinamicas/Pilha.cpp
         arquivosCpp/dinamicas/Fila.cpp
+        arquivosCpp/dinamicas/ArvoreBinaria.cpp
+        arquivosCpp/dinamicas/ArvoreMultipla.cpp
 )
